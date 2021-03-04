@@ -26,45 +26,23 @@
             </h2>
 
             <div>
-                <input id="add1">
-                <span>+</span>
-                <input id="add2">
-                <button id="addButton">Add</button>
-                <span id="sum"></span>
-            </div>
-            
-            <div>
-                <input id="subt1">
-                <span>-</span>
-                <input id="subt2">
-                <button id="subtButton">Subtract</button>
-                <span id="difference"></span>
-            </div>
-
-            <div>
-                <input id="div1">
-                <span>/</span>
-                <input id="div2">
-                <button id="divButton">Divide</button>
-                <span id="quo"></span>
-            </div>
-
-            <div>
-                <input id="mult1">
-                <span>*</span>
-                <input id="mult2">
-                <button id="multButton">Multiply</button>
-                <span id="prod"></span>
+                <input id="input1">
+                <select id="operator-selector" onChange="setValue()">
+					<option value="addOption">+</option>
+					<option value="subtOption">-</option>
+					<option value="multOption">*</option>
+					<option value="divOption">/</option>
+				</select>
+                <input id="input2">
+                <button id="equalsButton" onclick="handleClick()">=</button>
+                <span id="result"></span>
             </div>
 
         </section>
-        
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app2.js"></script>
 </body>
-
-</html>
